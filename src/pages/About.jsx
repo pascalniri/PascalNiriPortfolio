@@ -2,6 +2,7 @@ import React from "react";
 import { BsFillEmojiHeartEyesFill } from "react-icons/bs";
 import { IoIosChatboxes } from "react-icons/io";
 import EduAndExpe from "../components/EduAndExpe"
+import Chat from "../components/Chat";
 const About = () => {
   return (
    <div>
@@ -10,7 +11,7 @@ const About = () => {
         <img
           src="/profile.jpg"
           alt=""
-          className="rounded-full h-auto"
+          className="rounded-full h-auto border-4 border-[#EB5D3B]"
         />
       </div>
 
@@ -45,6 +46,7 @@ const About = () => {
       </div>
     </div>
           <EduAndExpe />
+          <Chat />
    </div>
 
   );

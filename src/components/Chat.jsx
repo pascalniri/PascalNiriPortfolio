@@ -23,7 +23,7 @@ const Chat = () => {
 
     </div>
     
-    <div className='my-10 font-light text-[15px] px-10 gap-y-[20px] flex flex-col md:flex-row justify-between items-center text-[#7E7E7F]'>
+    <div className='my-10 text-center font-light text-[15px] px-10 gap-y-[20px] flex flex-col md:flex-row justify-between items-center text-[#7E7E7F]'>
              <p>Copyright @2024, <span className='text-[#EB5D3B]'>Pascal</span> All Rights Reserved.</p>
              <p>Inspired by the exceptional design of  <a href="https://wordpressboss.com/" target="_blank" className='text-[#EB5D3B]'>WORDPRESSBOSS</a>.</p>
           </div>

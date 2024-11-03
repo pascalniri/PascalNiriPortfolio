@@ -16,7 +16,7 @@ const Navigation = () => {
         <nav className="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between">
           <a
             className="sm:order-1 flex-none text-xl font-semibold dark:text-white focus:outline-none focus:opacity-80"
-            href="#"
+            href="/"
           >
             Pascal
           </a>

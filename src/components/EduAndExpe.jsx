@@ -1,6 +1,4 @@
 import React from "react";
-import { BsFillEmojiHeartEyesFill } from "react-icons/bs";
-import { IoIosChatboxes } from "react-icons/io";
 import { MdWork } from "react-icons/md";
 import { IoSchool } from "react-icons/io5";
 const About = () => {
