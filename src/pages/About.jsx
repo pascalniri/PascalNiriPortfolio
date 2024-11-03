@@ -8,7 +8,7 @@ const About = () => {
      <div className="font-outfit text-white mx-auto px-4 md:px-10 md:max-w-7xl flex flex-col lg:flex-row gap-5 justify-items-center p-5">
       <div className="flex flex-col justify-center items-center text-center p-[40px] rounded-[25px] border-2 border-[#141414] w-full lg:w-[50%] bg-[#121214]">
         <img
-          src="https://png.pngtree.com/png-vector/20191110/ourmid/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg"
+          src="/profile.jpg"
           alt=""
           className="rounded-full h-auto"
         />
