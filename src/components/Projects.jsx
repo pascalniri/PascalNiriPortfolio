@@ -3,22 +3,27 @@ import { MdOutlineAdsClick } from "react-icons/md";
 const projectsData = [
   {
     id: 1,
-    title: "UI/UX Design",
+    image: "/byen.svg",
+    link:"https://www.byenetwork.org/",
+    title: "UI/UX Design & Web Development",
     category: "Design",
-    description: "UI/UX project description",
+    description: "Black Youth Empowerment Network",
   },
   {
     id: 2,
+    image: "/byen.svg",
     title: "Portfolio Website",
     category: "Web Development",
     description: "Web development project description",
   },
   {
     id: 3,
+    image: "/byen.svg",
     title: "Contact Manager",
     category: "Design",
     description: "Contact management system",
   },
+  
   // Add more projects as needed
 ];
 
@@ -63,12 +68,12 @@ const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
           {filteredProjects.map((project) => (
             <div key={project.id} className="relative border border-[#333333] rounded-lg">
-             <a href="#" className="hover:bg-black group relative">
+             <a href={project.link} target="_blank" className="hover:bg-black group relative">
              <div className="absolute rounded-tr-lg w-full h-full inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 flex items-center justify-center transition-opacity duration-300">
                 <MdOutlineAdsClick className="text-white text-3xl opacity-0 group-hover:opacity-100 duration-300 hover:scale-125 transition hover:text-[#EB5D3B]" />
               </div>
              <img
-                src="https://cdn.sanity.io/images/0mnqm898/production/c00bce58c817ec3a16945711111641d37320ae67-2240x1260.png"
+                src={project.image}
                 alt=""
                 className="w-full h-auto rounded-t-lg"
               />
