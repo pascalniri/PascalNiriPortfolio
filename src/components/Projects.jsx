@@ -39,7 +39,7 @@ const Projects = () => {
     <div className="font-outfit text-white mx-auto px-4 md:px-10 md:max-w-7xl ">
       <div className="flex flex-col items-center text-center px-4 md:px-[40px] py-5 rounded-[25px] border-2 border-[#141414] bg-[#121214] w-full mx-auto">
         <h1 className="text-[25px] md:text-[30px]">My Projects & Works</h1>
-        <p className="mt-2 text-[#7E7E7F] md:w-[60%]">
+        <p className="mt-2 font-light text-[14px] text-[#747474] md:w-[60%]">
          Explore a selection of my featured projects, showcasing skills in
           design and development.
         </p> 
@@ -80,7 +80,7 @@ const Projects = () => {
              </a>
               <div className="flex flex-col text-left p-4">
                 <h3 className="text-lg font-semibold">{project.title}</h3>
-                <p className="text-sm text-gray-400 mt-1">
+                <p className="font-light text-[14px] text-[#747474] mt-1">
                   {project.description}
                 </p>
               </div>

@@ -15,7 +15,7 @@ const Home = () => {
           className="rounded-full h-auto border-4 border-[#EB5D3B]"
         />
         <h1 className="mt-10 text-[25px] md:text-[30px]">Pascal Niri</h1>
-        <p className="mt-2 text-[#7E7E7F]">
+        <p className="mt-2 font-light text-[14px] text-[#747474]">
           I am a UI/UX Designer and Front-end Developer based in Kigali, Rwanda.
         </p>
         <div className="flex flex-row gap-5 mt-8">
@@ -33,14 +33,13 @@ const Home = () => {
 
       <div className="grid grid-cols- gap-5 justify-items-center w-full">
         <div className="rounded-[25px] border border-[#141414] px-4 md:px-[40px] py-[20px] bg-[#121214] w-full h-full flex flex-col justify-center items-start">
-          <p className="text-[#7E7E7F]">Hello There!</p>
+          <p className="font-light text-[14px] text-[#747474]">Hello There!</p>
           <h1 className="text-[25px] md:text-[30px] leading-[2.5rem] mt-4">
-            I'm <span className="text-[#EB5D3B] font-semibold">Pascal Niri</span>, a product designer crafting user-centric design
-            with pixel-perfect precision.
+            I'm <span className="text-[#EB5D3B] font-semibold">Pascal Niri</span>, a UI/UX Designer and Frontend Developer crafting intuitive and visually stunning digital experiences.
           </h1>
           <span className="flex items-center gap-3 mt-5">
             <BsFillEmojiHeartEyesFill className="text-[#00FF00]" />
-            <p className="text-[#7E7E7F]">Available for work</p>
+            <p className="font-light text-[14px] text-[#747474]">Available for work</p>
           </span>
           <a
             href="/Resume-Pascal-Niringiyimana.pdf"

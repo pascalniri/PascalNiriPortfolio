@@ -44,30 +44,30 @@ const Navigation = () => {
             className={`${isMenuOpen ? "block" : "hidden"} overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2`}
           >
             <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
-              <Link
+              <a
                 className="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-[#EB5D3B] dark:text-neutral-400"
-                to="/"
+                href="/"
               >
                 Home
-              </Link>
-              <Link
+              </a>
+              <a
                 className="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-[#EB5D3B] dark:text-neutral-400"
-                to="/about"
+                href="/about"
               >
                 About
-              </Link>
-              <Link
+              </a>
+              <a
                 className="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-[#EB5D3B] dark:text-neutral-400"
-                to="#"
+                href="#"
               >
                 Projects
-              </Link>
-              <Link
+              </a>
+              <a
                 className="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-[#EB5D3B] dark:text-neutral-400"
-                to="#"
+                href="/services"
               >
                 Services
-              </Link>
+              </a>
             </div>
           </div>
         </nav>

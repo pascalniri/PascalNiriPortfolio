@@ -91,7 +91,7 @@ const About = () => {
 
                   <p>{experience.year}</p>
 
-                  <p className="mt-4">{experience.roleInfo}</p>
+                  <p className="mt-4 font-light text-[14px] text-[#747474]">{experience.roleInfo}</p>
                   <hr className=" mt-8 w-full border-[#333333]" />
                 </span>
               </span>

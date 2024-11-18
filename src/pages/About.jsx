@@ -17,19 +17,14 @@ const About = () => {
 
       <div className="grid grid-cols- gap-5 justify-items-center w-full">
         <div className="rounded-[25px] border border-[#141414] px-4 md:px-[40px] py-[20px] bg-[#121214] w-full h-full flex flex-col justify-center items-start">
-          <p className="text-[#7E7E7F]">Hello There!</p>
+          <p className="font-light text-[14px] text-[#747474]">Hello There!</p>
           <h1 className="text-[25px] md:text-[30px] leading-[2.5rem] mt-4">
             I'm{" "}
-            <span className="text-[#EB5D3B] font-semibold">Pascal Niri</span>, a
-            product designer crafting user-centric design with pixel-perfect
-            precision.
+            <span className="text-[#EB5D3B] font-semibold">Pascal Niri</span>, a UI/UX Designer and Frontend Developer crafting intuitive and visually stunning digital experiences.
           </h1>
           <span className="flex items-center gap-3 mt-5">
-            <p className="text-[#7E7E7F]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-              animi atque omnis delectus! Impedit iste nam magnam sunt, sapiente
-              aut odio dicta pariatur aspernatur dolore aperiam repellat
-              architecto maiores officia.
+            <p className="font-light text-[14px] text-[#747474]">
+            I specialize in creating user-focused designs and translating them into responsive, pixel-perfect websites and applications. With a passion for seamless interactions and modern design, I bring your ideas to life with precision and creativity.
             </p>
           </span>
           <a
