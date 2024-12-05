@@ -6,23 +6,66 @@ const projectsData = [
     image: "/byen.svg",
     link:"https://www.byenetwork.org/",
     title: "UI/UX Design & Web Development",
-    category: "Design",
+    category: "Both",
     description: "Black Youth Empowerment Network",
   },
   {
     id: 2,
-    image: "/byen.svg",
-    title: "Portfolio Website",
-    category: "Web Development",
-    description: "Web development project description",
+    image: "/Iduka.svg",
+    title: "Figma Design",
+    link:"https://www.figma.com/design/WCzH2bIvkfDw5RjTbDFA7K/Bihemu-project?node-id=0-1&t=ZLYLTrnp8vhhGPEv-1",
+    category: "Design",
+    description: "Iduka",
   },
   {
     id: 3,
-    image: "/byen.svg",
-    title: "Contact Manager",
-    category: "Design",
-    description: "Contact management system",
+    image: "/rapiam.png",
+    title: "Figma Design & Web Development",
+    link:"https://rapiam.vercel.app/",
+    category: "Both",
+    description: "Rise And Put Into Action Ministries",
   },
+  {
+    id: 4,
+    image: "/byen.svg",
+    link:"https://www.byenetwork.org/",
+    title: "UI/UX Design & Web Development",
+    category: "Web Development",
+    description: "Black Youth Empowerment Network",
+  },
+  {
+    id: 5,
+    image: "/bk.png",
+    link:"https://www.figma.com/proto/Mnprw4bEPGZXXaA3FSmaim/BK-appointment-platform?page-id=0%3A1&node-id=2-2&starting-point-node-id=2%3A2&scaling=scale-down&content-scaling=fixed&t=0LCcVUUeR18fmmc9-1",
+    title: "Interactive Figma Prototype",
+    category: "Design",
+    description: "Bank of Kigali Appointment Platform",
+  },
+  {
+    id: 6,
+    image: "/fami.png",
+    link:"https://faami.vercel.app/",
+    title: "Figma Prototype & Web Version",
+    category: "Both",
+    description: "FAMI (Find My ID)",
+  },
+  {
+    id: 7,
+    image: "/fami.png",
+    link:"https://faami.vercel.app/",
+    title: "Web Development",
+    category: "Web Development",
+    description: "FAMI (Find My ID)",
+  },
+  {
+    id: 8,
+    image: "/xticket.png",
+    link:"https://www.figma.com/design/9yDK6wY83Irfk4XnSY8tgy/X-Ticket?node-id=0-1&t=y0Y19kKlzNn8lkW4-1",
+    title: "Figma Design",
+    category: "Design",
+    description: "X-Ticket Platform",
+  },
+  
   
   // Add more projects as needed
 ];
@@ -47,7 +90,7 @@ const Projects = () => {
         {/* Tabs for project categories */}
         <div className="my-[3rem]">
           <ul className="flex flex-wrap -mb-px text-sm font-medium text-center">
-            {["Show All", "Design", "Web Development"].map(
+            {["Show All", "Design", "Web Development", "Both"].map(
               (tab) => (
                 <li className="me-2 md:me-[2rem]" role="presentation" key={tab}>
                   <button

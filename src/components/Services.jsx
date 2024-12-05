@@ -185,7 +185,7 @@ const Services = () => {
               <h2 className="text-[25px]">Pro Plan</h2>
               <p className="font-light text-[14px] text-[#5C5C5D]">
               Unlock the best with advanced animations, API integration, and 30 days of post-launch support. Perfect for complex, high-performance projects.              </p>
-              <h1 className="text-[#EB5D3B] font-semibold text-[35px] mt-5">$120 <span className="text-[#CCCCCC] text-[25px] font-normal">/month</span></h1>
+              <h1 className="text-[#EB5D3B] font-semibold text-[35px] mt-5">$1 200 <span className="text-[#CCCCCC] text-[25px] font-normal">/month</span></h1>
             </div>
 
             <div className="w-full px-5 py-8">
