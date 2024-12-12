@@ -49,21 +49,21 @@ const About = () => {
       id:2,
       school:"freeCodeCamp.",
       year:"2022 - 2023",
-      degree:"Bachelor Degree of Spftware Engineering.",
+      degree:"Certificate of Software Engineering.",
       site:"https://www.freecodecamp.org"
     },
     {
       id:3,
       school:"Great Learning.",
       year:"2023 - 2024",
-      degree:"Bachelor of Fine Arts in Graphic Design with a concentration in UI/UX Design.",
+      degree:"Certificate of Fine Arts in Graphic Design with a concentration in UI/UX Design.",
       site:"https://www.mygreatlearning.com/"
     },
     {
       id:4,
       school:"Le Wagon.",
       year:"2024 - 2025",
-      degree:"Bachelor Degree in UI/UX Design.",
+      degree:"Certificate of UI/UX Design.",
       site:"https://www.lewagon.com"
     },
   ];
