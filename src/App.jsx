@@ -4,7 +4,14 @@ import Navigation from "./components/Navigation";
 import LandingPage from "./pages/LandingPage";
 import About from "./pages/About"
 import Services from "./components/Services";
+import ReactGA from 'react-ga';
+
+
+const TRACKING_ID = "G-DTCT6ZKDL6";
+ReactGA.initialize(TRACKING_ID);
+
 function App() {
+  
   return (
     <BrowserRouter>
       <Navigation />

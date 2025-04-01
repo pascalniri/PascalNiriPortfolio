@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AiOutlineAntDesign } from "react-icons/ai";
 import { IoCodeSlash } from "react-icons/io5";
 import { BsFillPhoneFill } from "react-icons/bs";
 import { TbPointFilled } from "react-icons/tb";
 import Chat from "./Chat";
+import ReactGA from 'react-ga';
 
 const Services = () => {
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
+
   return (
     <div className="font-outfit text-white mx-auto px-4 md:px-10 md:max-w-7xl flex flex-col gap-[3rem] justify-items-center p-5">
       <div className="bg-[#121214] border border-[#141414] flex flex-col justify-center items-center px-[2rem] py-[3rem] rounded-[25px]">
