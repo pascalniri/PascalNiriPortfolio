@@ -4,22 +4,36 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { BsFillEmojiHeartEyesFill } from "react-icons/bs";
 import { MdDownload } from "react-icons/md";
-import Analytics from 'analytics'
+import ReactGA from "react-ga4";
 
 
-// Initialize analytics
-const analytics = Analytics({
-  app: 'pascal-niri-portfolio',
-  plugins: [
-    require('analytics/google-analytics')({  // Use require instead of import
-      trackingId: 'G-DTCT6ZKDL6' // Replace with your GA4 Measurement ID
-    })
-  ]
-});
+// Initialize GA4
+ReactGA.initialize('G-DTCT6ZKDL6'); 
 
 const Home = () => {
   useEffect(() => {
-    analytics.page();
+    // Track page view
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+    
+    // Track CV downloads
+    const trackDownload = () => {
+      ReactGA.event({
+        category: 'Download',
+        action: 'Download CV',
+        label: 'CV Download Button'
+      });
+    };
+    
+    const downloadButton = document.querySelector('a[download]');
+    if (downloadButton) {
+      downloadButton.addEventListener('click', trackDownload);
+    }
+    
+    return () => {
+      if (downloadButton) {
+        downloadButton.removeEventListener('click', trackDownload);
+      }
+    };
   }, []);
 
   return (
