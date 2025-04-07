@@ -5,36 +5,18 @@ import { FaXTwitter } from "react-icons/fa6";
 import { BsFillEmojiHeartEyesFill } from "react-icons/bs";
 import { MdDownload } from "react-icons/md";
 import ReactGA from "react-ga4";
+import { trackEvent } from "../analytics";
 
 
 // Initialize GA4
 ReactGA.initialize('G-DTCT6ZKDL6'); 
 
 const Home = () => {
-  useEffect(() => {
-    // Track page view
-    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
-    
-    // Track CV downloads
-    const trackDownload = () => {
-      ReactGA.event({
-        category: 'Download',
-        action: 'Download CV',
-        label: 'CV Download Button'
-      });
-    };
-    
-    const downloadButton = document.querySelector('a[download]');
-    if (downloadButton) {
-      downloadButton.addEventListener('click', trackDownload);
-    }
-    
-    return () => {
-      if (downloadButton) {
-        downloadButton.removeEventListener('click', trackDownload);
-      }
-    };
-  }, []);
+  const handleDownload = () => {
+    trackEvent('Download', 'CV Download', 'Home Page');
+    // Rest of your download logic
+  };
+
 
   return (
     <div className="font-outfit text-white mx-auto px-4 md:px-10 md:max-w-7xl flex flex-col lg:flex-row gap-5 justify-items-center p-5">
@@ -72,6 +54,7 @@ const Home = () => {
             <p className="font-light text-[14px] text-[#747474]">Available for work</p>
           </span>
           <a
+            onClick={handleDownload}
             href="/Resume-Pascal-Niringiyimana.pdf"
             download="Resume-Pascal-Niringiyimana"
             className="relative inline-flex items-center justify-start  px-5 py-3 overflow-hidden font-medium transition-all bg-[#EB5D3B] rounded-[8px] hover:bg-white group mt-10"
