@@ -1,15 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { BsFillEmojiHeartEyesFill } from "react-icons/bs";
 import { MdDownload } from "react-icons/md";
-import ReactGA from "react-ga4";
+import Analytics from 'analytics'
+
+
+// Initialize analytics
+const analytics = Analytics({
+  app: 'pascal-niri-portfolio',
+  plugins: [
+    require('analytics/google-analytics')({  // Use require instead of import
+      trackingId: 'G-DTCT6ZKDL6' // Replace with your GA4 Measurement ID
+    })
+  ]
+});
 
 const Home = () => {
   useEffect(() => {
-    ReactGA.send({ hitType: "pageview", page: "/home" });
+    analytics.page();
   }, []);
+
   return (
     <div className="font-outfit text-white mx-auto px-4 md:px-10 md:max-w-7xl flex flex-col lg:flex-row gap-5 justify-items-center p-5">
       <div className="flex flex-col justify-center items-center text-center p-[40px] rounded-[25px] border-2 border-[#141414] w-full lg:w-[50%] bg-[#121214]">
