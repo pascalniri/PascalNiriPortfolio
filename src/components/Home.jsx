@@ -4,8 +4,12 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { BsFillEmojiHeartEyesFill } from "react-icons/bs";
 import { MdDownload } from "react-icons/md";
+import ReactGA from "react-ga4";
 
 const Home = () => {
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: "/home" });
+  }, []);
   return (
     <div className="font-outfit text-white mx-auto px-4 md:px-10 md:max-w-7xl flex flex-col lg:flex-row gap-5 justify-items-center p-5">
       <div className="flex flex-col justify-center items-center text-center p-[40px] rounded-[25px] border-2 border-[#141414] w-full lg:w-[50%] bg-[#121214]">
